@@ -12,8 +12,8 @@ end
 Dir[File.expand_path(File.join(File.dirname(__FILE__), 'support', '**', '*.rb'))].each { |f| require f}
 
 RSpec.configure do |config|
-  config.include HTTParty::StubResponse
-  config.include HTTParty::SSLTesthelper
+  # config.include HTTParty::StubResponse
+  # config.include HTTParty::SSLTesthelper
 
   config.before(:suite) do
     FakeWeb.allow_net_connect = false
