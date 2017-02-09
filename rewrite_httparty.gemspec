@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dave Woodall"]
   spec.email         = ["dave@woodalls.me"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A rewrite of httparty}
+  spec.description   = %q{If you are an aspiring musician, you play cover songs. If you are an aspiring coder, you rewrite popular, tested code.}
+  spec.homepage      = "http://www.fakefarm.com"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -30,6 +30,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.required_ruby_version     = '>= 2.0.0'
+  spec.add_dependency 'multi_xml', ">= 0.5.2"
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"

@@ -1,4 +1,21 @@
 source 'https://rubygems.org'
+# _dw surprised to see gems in gemfile. I thought all gems are supposed to go in gemspec?
 
-# Specify your gem's dependencies in rewrite_httparty.gemspec
 gemspec
+
+gem 'rake'
+gem 'fakeweb',  '~> 1.3'
+gem 'mongrel',  '1.2.0.pre2'
+
+group :development do
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
+end
+
+group :test do
+  gem 'rspec',    '~> 3.4'
+  gem 'simplecov', require: false
+  gem 'aruba'
+  gem 'cucumber', '~> 2.3'
+end
