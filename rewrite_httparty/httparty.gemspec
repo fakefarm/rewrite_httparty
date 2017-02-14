@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rewrite_httparty/version'
+require 'httparty/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rewrite_httparty"
-  spec.version       = RewriteHttparty::VERSION
+  spec.name          = "httparty"
+  spec.version       = HTTParty::VERSION
   spec.authors       = ["Dave Woodall"]
   spec.email         = ["dave@woodalls.me"]
 

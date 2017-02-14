@@ -1,8 +1,8 @@
 require "spec_helper"
 
-RSpec.describe RewriteHttparty do
+RSpec.describe HTTParty do
   it "has a version number" do
-    expect(RewriteHttparty::VERSION).not_to be nil
+    expect(HTTParty::VERSION).not_to be nil
   end
 
   it "does something useful" do

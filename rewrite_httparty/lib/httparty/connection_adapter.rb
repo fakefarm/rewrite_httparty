@@ -1,4 +1,4 @@
-module RewriteHttparty
+module HTTParty
 <<~HEREDOC
   Default connection adapter that returns a new Net::HTTP each time
 
@@ -37,5 +37,7 @@ HEREDOC
 
   class ConnectionAdapter
     # Private: Regex used to strip brackets from IPv6 URIs.
+      def initialize(uri)
+      end
   end
 end

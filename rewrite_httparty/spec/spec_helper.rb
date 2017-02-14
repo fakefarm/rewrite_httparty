@@ -2,7 +2,7 @@ require "simplecov"
 SimpleCov.start
 
 require "bundler/setup"
-require "rewrite_httparty"
+require "httparty"
 require "fakeweb"
 
 def file_fixture(filename)
